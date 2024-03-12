@@ -19,8 +19,8 @@ export default function Home() {
 
 
   return (
-    <div>
-      <div className="note-list">
+    <div className="flex justify-center w-full mb-16 pt-3">
+      <div className="">
           {notes.map((note, index) => (
             <ListItem key={index} note={note} />
           ))}
