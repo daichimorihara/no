@@ -2,6 +2,8 @@
 
 import React, {useState, useEffect} from "react";
 import ListItem from '../components/ListItem'
+import AddButton from "../components/AddButton";
+
 
 export default function Home() {
 
@@ -20,13 +22,14 @@ export default function Home() {
 
   return (
     <div className="flex justify-center w-full mb-16 pt-3">
-      <div className="">
+      <div className="flex flex-col">
           {notes.map((note, index) => (
             <ListItem key={index} note={note} />
           ))}
 
-          
+        <AddButton />     
       </div>
+      
 
     </div>
   );
